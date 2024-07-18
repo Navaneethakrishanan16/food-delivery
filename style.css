@@ -1,0 +1,120 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utility */
+.pos-ab{
+    position: absolute;
+}
+.flex{
+    display: flex;
+    align-self: center;
+}
+/* font */
+@font-face {
+    font-family: outfit-bold;
+    src: url('./font/ttf/Outfit-Bold.ttf');
+}
+@font-face {
+    font-family: outfit-light;
+    src: url('./font/ttf/Outfit-Light.ttf');
+}
+@font-face {
+    font-family: outfit-medium;
+    src: url('./font/ttf/Outfit-Medium.ttf');
+}
+@font-face {
+    font-family: outfit-regular;
+    src: url('./font/ttf/Outfit-Regular.ttf');
+}
+@font-face {
+    font-family: outfit-extrabold;
+    src: url('./font/ttf/Outfit-ExtraBold.ttf');
+}
+
+
+/* main */
+main{
+    margin: 0px 150px;
+}
+
+
+/* nav */
+.top-heading{
+    font-family: outfit-regular;
+    justify-content: space-between;
+    padding: 20px 0px;
+    height: 95px;
+    margin: auto;
+}
+.heading{
+    font-family: outfit-bold;
+    align-self: center;
+    font-size: 30px;
+    color: #ff6347;
+}
+.un-list{
+    gap: 40px;
+    list-style-type: none;
+}
+.un-list a{
+    text-decoration: none;
+}
+.fa-btns{
+    gap: 40px;
+    font-size: 25px;
+}
+.sign-btn{
+    font-family: outfit-regular;
+    border: 1px solid #ff6347;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background:none;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 35vw;
+    background: url("./assets/header_img.png") no-repeat ;
+    background-size: cover;
+    border-radius:10px ;
+    margin: 20px auto;
+}
+
+.hero-content{
+    font-family: outfit-regular;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+
+}
+.hero-content h2{
+    font-family: outfit-medium;
+    line-height: 75px;
+    font-weight: 500;
+    color: #fff;
+    font-size: max(4vw,22px);
+    font-size: 57px;
+}
+.hero-content p{
+    line-height: 17px;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 0px;
+}
+.view-menu{
+    font-family: outfit-regular;
+    border: 1px solid white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    color: dimgray;
+}
+.view-menu:hover{
+
+}
