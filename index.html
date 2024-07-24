@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZOMATO</title>
+    <title>SOMATO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <main>
         <header>
             <nav class="top-heading flex">
-                <h1 class="heading">ZOMATO</h1>
+                <h1 class="heading">SOMATO</h1>
                 <ul class="un-list flex">
-                    <li> <a href="">Home</a> </li>
-                    <li> <a href="">menu</a> </li>
-                    <li> <a href="">Contact Us</a> </li>
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#food-sample">menu</a> </li>
+                    <li> <a href="#about-us">Contact Us</a> </li>
                 </ul>
                 <div class="fa-btns flex">
                     <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -24,14 +25,305 @@
                 </div>
             </nav>
         </header>
-        <section class="hero">
+        <figure class="hero">
             <div class="hero-content flex pos-ab">
                 <h2> Order your<br> favourite food here</h2>
-                <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise</p>
-                <button class="view-menu">View Menu</button>
+                <p>Choose from a diverse sample featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise</p>
+                <button class="view-menu">View Sample</button>
             </div>
+        </figure>
+        <section>
+            <article id="food-sample" class="flex">
+                <h2>Explore our sample</h2>
+                <p>Choose from a diverse sample featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise</p>
+                <div class="sample flex">
+                    <div class="sample-content"> <div class="sample-img"><img src="./assets/pure veg.png" width="107" height="107"></div>
+                    <p>Pure veg</p></div>
+                    <div class="sample-content"> <div class="sample-img"><img src="./assets/cake.png" width="107" height="107"></div>
+                    <p>Cakes</p></div>
+                    <div class="sample-content"> <div class="sample-img" ><img src="./assets/noodles.png"width="107" height="107" ></div>
+                    <p>Noodle</p></div>
+                    <div class="sample-content"> <div class="sample-img"><img src="./assets/sandwich.png" width="107" height="107"></div>
+                    <p>Sandwich</p></div>
+                    <div class="sample-content"> <div class="sample-img"><img src="./assets/pasta.png" width="107" height="107"></div>
+                    <p>Paste</p></div>
+                    <div class="sample-content"> <div class="sample-img"><img src="./assets/roll.png" width="107" height="107"></div>
+                    <p>Roll</p></div>
+                    <div class="sample-content"> <div class="sample-img"><img src="./assets/salad.png" width="107" height="107"></div>
+                    <p>Salad</p></div>
+                    <div class="sample-content"> <div class="sample-img"><img src="./assets/desert.png" width="107" height="107"></div>
+                    <p>Desert</p></div>
+                </div>
+             <hr>
+            </article>
+            <article class="menu-content">
+                <h2>Top dishes near you</h2>
+                <div class="menu ">
+                    <div class="menu-parent">
+                        <div class="menu-img">
+                            <img src="./assets/menu-cheese pasta.png" alt="cheese pasta" class="dish-img">
+                            <img src="./assets/add.png" alt="" id="add">
+                        </div>
+                        <div class="menu-child">
+                            <div class="dish-name-rating flex">
+                                <p>Cheese Pasta</p>
+                                <img src="/assets/star.png" alt="">
+                            </div>
+                            <p class="about-food">Creamy and indulgent, our cheese pasta is a perfect harmony of tender pasta enveloped in a rich, velvety cheese sauce that melts in your mouth.</p>
+                            <p id="cost">$1</p>
+                        </div>
+                    </div>
+                    <div class="menu-parent">
+                        <div class="menu-img">
+                            <img src="./assets/veg-pasta.png" class="dish-img">
+                            <img src="./assets/add.png" alt="" id="add">
+                        </div>
+                        <div class="menu-child">
+                            <div class="dish-name-rating flex">
+                                <p>Vegetarian Pasta</p>
+                                <img src="/assets/star.png" alt="">
+                            </div>
+                            <p class="about-food">Delicious vegetarian pasta made with a blend of seasonal vegetables, tossed in a creamy tOMATO sauce and topped with fresh basil leaves</p>
+                            <p id="cost">$4</p>
+                        </div>
+                    </div>
+                    <div class="menu-parent">
+                        <div class="menu-img">
+                            <img src="./assets/menu-noodles1.png" class="dish-img">
+                            <img src="./assets/add.png" alt="" id="add">
+                        </div>
+                        <div class="menu-child">
+                            <div class="dish-name-rating flex">
+                                <p>Spicy Noodles</p>
+                                <img src="/assets/star.png" alt="">
+                        </div>
+                            <p class="about-food">Spicy noodles ignite your taste buds with a tantalizing blend of savory spices, delivering a satisfying kick alongside tender noodles that leave you craving more with every bite.</p>
+                             <p id="cost">$3</p>
+                        </div>
+                    </div>
+                    <div class="menu-parent">
+                        <div class="menu-img">
+                            <img src="./assets/roll1.png" class="dish-img">
+                            <img src="./assets/add.png" alt="" id="add">
+                        </div>
+                        <div class="menu-child">
+                            <div class="dish-name-rating flex">
+                                <p> Vegetarian shawarma </p>
+                                <img src="/assets/star.png" alt="">
+                            </div>
+                            <p class="about-food">vegetables wrapped in warm, fluffy pita bread. It's a savory and satisfying alternative packed with Middle Eastern flavors like tahini, pickles, and crunchy fresh veggies.</p>
+                            <p id="cost">$5</p>
+                        </div>
+                    </div>
+                    <div class="menu-parent">
+                        <div class="menu-img">
+                            <img src="./assets/chicken roll.png"  class="dish-img">
+                            <img src="./assets/add.png" alt="" id="add">
+                        </div>
+                        <div class="menu-child">
+                            <div class="dish-name-rating flex">
+                                <p> Chicken Roll </p>
+                                <img src="/assets/star.png" alt="">
+                            </div>
+                            <p class="about-food">Chicken shawarma features tender, marinated slices of grilled chicken, wrapped in soft pita bread with a medley of fresh vegetables and creamy tahini sauce, delivering a delicious blend of savory flavors with every bite</p>
+                            <p id="cost">$4</p>
+                        </div>
+                    </div>
+                    <div class="menu-parent">
+                        <div class="menu-img">
+                            <img src="./assets/veg salad.png"  class="dish-img">
+                            <img src="./assets/add.png" alt="" id="add">
+                        </div>
+                        <div class="menu-child">
+                            <div class="dish-name-rating flex">
+                                <p> Veg Salad </p>
+                                <img src="/assets/star.png" alt="">
+                            </div>
+                            <p class="about-food">Chicken shawarma features tender, marinated slices of grilled chicken, wrapped in soft pita bread with a medley of fresh vegetables and creamy tahini sauce, delivering a delicious blend of savory flavors with every bite</p>
+                            <p id="cost">$2</p>
+                        </div>
+                    </div>
+                    <div class="menu-parent">
+                        <div class="menu-img">
+                            <img src="./assets/egg &veg salad.png"  class="dish-img">
+                            <img src="./assets/add.png" alt="" id="add">
+                        </div>
+                        <div class="menu-child">
+                            <div class="dish-name-rating flex">
+                                <p> Veggie Delight Sandwich </p>
+                                <img src="/assets/star.png" alt="">
+                            </div>
+                            <p class="about-food">An egg and veg salad blends boiled eggs with a colorful assortment of fresh vegetables like tOMATOes, bell peppers, and cucumbers, complemented by a tangy dressing for a nutritious and satisfying meal option</p>
+                            <p id="cost">$3</p>
+                        </div>
+                    </div>
+                    <div class="menu-parent">
+                        <div class="menu-img">
+                            <img src="./assets/veg sandwich.png"  class="dish-img">
+                            <img src="./assets/add.png" alt="" id="add">
+                        </div>
+                        <div class="menu-child">
+                            <div class="dish-name-rating flex">
+                                <p> Veggie Delight Sandwich </p>
+                                <img src="/assets/star.png" alt="">
+                            </div>
+                            <p class="about-food">Our veggie delight sandwich features a delectable medley of crisp lettuce, juicy tOMATOes, crunchy cucumbers, and savory bell peppers layered between soft, wholesome bread. It's a satisfying and nutritious choice, bursting with vibrant flavors and textures.
+                            <p id="cost">$3</p>
+                        </div>
+                    </div>
+                    <div class="menu-parent">
+                        <div class="menu-img">
+                            <img src="./assets/panner sandwich.png"  class="dish-img">
+                            <img src="./assets/add.png" alt="" id="add">
+                        </div>
+                        <div class="menu-child">
+                            <div class="dish-name-rating flex">
+                                <p> Paneer Paradise sandwich </p>
+                                <img src="/assets/star.png" alt="">
+                            </div>
+                            <p class="about-food">The Paneer Paradise sandwich combines tender, grilled paneer with a colorful assortment of fresh vegetables such as crisp lettuce, juicy tOMATOes, crunchy cucumbers, and zesty bell peppers. Encased in soft, wholesome bread and seasoned with a hint of spice, it offers a delightful fusion of textures and flavors, perfect for a satisfying and wholesome meal.</p>
+                            <p id="cost">$1</p>
+                        </div>
+                    </div>
+                    <div class="menu-parent">
+                        <div class="menu-img">
+                            <img src="./assets/menu desert.png"  class="dish-img">
+                            <img src="./assets/add.png" alt="" id="add">
+                        </div>
+                        <div class="menu-child">
+                            <div class="dish-name-rating flex">
+                                <p> Fruit dessert </p>
+                                <img src="/assets/star.png" alt="">
+                            </div>
+                            <p class="about-food">A fruit dessert is a refreshing and sweet treat that showcases a vibrant array of fresh fruits, such as strawberries, blueberries, kiwi, and mango, elegantly arranged to tantalize the taste buds with natural flavors and colors, often complemented by a drizzle of honey or a dollop of whipped cream for added indulgence.</p>
+                            <p id="cost">$1</p>
+                        </div>
+                    </div>
+                    <div class="menu-parent">
+                        <div class="menu-img">
+                            <img src="./assets/veg desert.png"  class="dish-img">
+                            <img src="./assets/add.png" alt="" id="add">
+                        </div>
+                        <div class="menu-child">
+                            <div class="dish-name-rating flex">
+                                <p>  vegetable dessert </p>
+                                <img src="/assets/star.png" alt="">
+                            </div>
+                            <p class="about-food">A vegetable dessert creatively transforms vegetables into a sweet and surprising culinary experience, featuring delights like carrot cake with cream cheese frosting, zucchini bread with chocolate chips, or beetroot brownies, balancing natural sweetness with wholesome ingredients for a unique and delicious treat.</p>
+                            <p id="cost">$1</p>
+                        </div>
+                    </div>
+                    <div class="menu-parent">
+                        <div class="menu-img">
+                            <img src="./assets/red velvet.png"  class="dish-img">
+                            <img src="./assets/add.png" alt="" id="add">
+                        </div>
+                        <div class="menu-child">
+                            <div class="dish-name-rating flex">
+                                <p> Red velvet </p>
+                                <img src="/assets/star.png" alt="">
+                            </div>
+                            <p class="about-food">A red velvet cake is a decadent dessert characterized by its rich crimson color and velvety texture, layered with creamy frosting typically made with cream cheese or buttercream. It offers a perfect balance of subtle cocoa flavor and a hint of tanginess, making it a beloved choice for celebrations and special occasions.</p>
+                            <p id="cost">$1</p>
+                        </div>
+                    </div>
+                    <div class="menu-parent">
+                        <div class="menu-img">
+                            <img src="./assets/menu-cake.png"  class="dish-img">
+                            <img src="./assets/add.png" alt="" id="add">
+                        </div>
+                        <div class="menu-child">
+                            <div class="dish-name-rating flex">
+                                <p> White forest </p>
+                                <img src="/assets/star.png" alt="">
+                            </div>
+                            <p class="about-food">A white forest cake is a luscious dessert consisting of layers of light and fluffy vanilla sponge cake soaked in cherry syrup, filled with layers of whipped cream and cherries. It's elegantly decorated with more whipped cream, chocolate shavings, and sometimes topped with maraschino cherries, offering a delightful blend of sweet and tangy flavors with a hint of chocolate richness.</p>
+                            <p id="cost">$10</p>
+                        </div>
+                    </div>
+                <div class="menu-parent">
+                    <div class="menu-img">
+                        <img src="./assets/veg gravy.png"  class="dish-img">
+                        <img src="./assets/add.png" alt="" id="add">
+                    </div>
+                    <div class="menu-child">
+                        <div class="dish-name-rating flex">
+                            <p> Vegetable gravy </p>
+                            <img src="/assets/star.png" alt="">
+                        </div>
+                        <p class="about-food"> It typically includes ingredients like onions, garlic, tomatoes, and a blend of spices, creating a rich and hearty accompaniment perfect for pairing with rice or bread.</p>
+                        <p id="cost">$5</p>
+                    </div>
+                </div>
+                <div class="menu-parent">
+                    <div class="menu-img">
+                        <img src="./assets/veg rich.png"  class="dish-img">
+                        <img src="./assets/add.png" alt="" id="add">
+                    </div>
+                    <div class="menu-child">
+                        <div class="dish-name-rating flex">
+                            <p>Vegetable rice with spices  </p>
+                            <img src="/assets/star.png" alt="">
+                        </div>
+                        <p class="about-food"> A fragrant dish combining fluffy rice with aromatic spices like cumin and turmeric, mixed with colorful vegetables for a flavorful and satisfying meal.</p>
+                        <p id="cost">$8</p>
+                    </div>
+                </div>
+                <div class="menu-parent">
+                    <div class="menu-img">
+                        <img src="./assets/chinese noodles.png"  class="dish-img">
+                        <img src="./assets/add.png" alt="" id="add">
+                    </div>
+                    <div class="menu-child">
+                        <div class="dish-name-rating flex">
+                            <p>Chinese noodles  </p>
+                            <img src="/assets/star.png" alt="">
+                        </div>
+                        <p class="about-food">  Versatile and flavorful, they come in various types like thin vermicelli or thick wheat noodles, often stir-fried or served in soups with vegetables, meats, or seafood, complemented by savory sauces for a delicious culinary experience.</p>
+                        <p id="cost">$8</p>
+                    </div>
+                </div>
+            </div>
+            </article>
+            <article>
+                <div id="download-platform">
+                    <p>For Better Experience Download <br>Somato App</p>
+                    <img src="./assets/play_store.png" alt="">
+                    <img src="./assets/app_store.png" alt="">
+                </div>
+            </article>
         </section>
-        
     </main>
+        <footer>
+            <div id="about-us" class="flex">
+                <div class="heading">
+                    <h2>SOMATO</h2>
+                </div>
+                <div class="fast-link">
+                    <ul>
+                        <li> <h3><a href="">Quick Link</a> </h3></li>
+                        <li> <a href="">Home</a> </li>
+                        <li> <a href="#food-sample">menu</a> </li>
+                        <li> <a href="">App-Download</a> </li>
+                        <li> <a href="#about-us">Contact Us</a> </li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <p>Follow Us</p>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                   <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="contact">
+                    <h5>Contact Us</h5>
+                    <p>Navaneethakrishnan S</p>
+                    <p>navaneesudharsanan@gmail.com</p>
+                    <p>Phone:9791612410</p>
+                </div>
+            </div>
+            <div class="copy-right">
+                <p>Copy right © 2024 NAVANEETHAKRISHNAN.</p>
+            </div>
+        </footer>
 </body>
 </html>
