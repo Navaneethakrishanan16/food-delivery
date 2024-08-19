@@ -10,18 +10,19 @@
 
 <body>
     <main>
-        <header>
+        <div class="popup">
+        <header class="fix">
             <nav class="top-heading flex">
                 <h1 class="heading">SOMATO</h1>
                 <ul class="un-list flex">
-                    <li> <a href="#">Home</a> </li>
+                    <li> <a href=" javascript:void(0); ">Home</a> </li>
                     <li> <a href="#food-sample">menu</a> </li>
                     <li> <a href="#about-us">Contact Us</a> </li>
                 </ul>
                 <div class="fa-btns flex">
                     <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                     <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-                    <button class="sign-btn">Sign in</button>  
+                    <button class="sign-btn">Sign in</button>     
                 </div>
             </nav>
         </header>
@@ -32,13 +33,44 @@
                 <button class="view-menu">View Sample</button>
             </div>
         </figure>
+
+    </div>
+
+        <div class="modal" id="modal">
+
+            <div class="Sign-up">
+                <span id="close">&times;</span>
+                <form action="">
+
+                    
+                    <h4 id="log-in">login</h4>
+
+                    <input type="text" placeholder="Your name" id="name">
+
+                    <input type="email" placeholder="Your Email" id="email">
+
+                    <input type="password" placeholder="Your Password" id="pass">
+
+                    <button class="submit">login</button>
+                </form>
+              
+
+                <p class="click-ca">Create a new account? <small  id="create-account">Click here</small></p>
+                <p class="click-ea">Already have an account? <small  id="exist-account">Login here</small></p>
+            </div>
+
+        </div>
         <section>
             <article id="food-sample" class="flex">
                 <h2>Explore our sample</h2>
                 <p>Choose from a diverse sample featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise</p>
                 <div class="sample flex">
-                    <div class="sample-content"> <div class="sample-img"><img src="./assets/pure veg.png" width="107" height="107"></div>
-                    <p>Pure veg</p></div>
+                    <div class="sample-content">
+                         <div class="sample-img pure-veg">
+                            <img src="./assets/pure veg.png" width="107" height="107">
+                        </div>
+                        <p>Pure veg</p>
+                    </div>
                     <div class="sample-content"> <div class="sample-img"><img src="./assets/cake.png" width="107" height="107"></div>
                     <p>Cakes</p></div>
                     <div class="sample-content"> <div class="sample-img" ><img src="./assets/noodles.png"width="107" height="107" ></div>
@@ -58,11 +90,18 @@
             </article>
             <article class="menu-content">
                 <h2>Top dishes near you</h2>
-                <div class="menu ">
+                <div class="menu">
                     <div class="menu-parent">
                         <div class="menu-img">
                             <img src="./assets/menu-cheese pasta.png" alt="cheese pasta" class="dish-img">
-                            <img src="./assets/add.png" alt="" id="add">
+                            <img src="./assets/add.png" alt="" id="add0">
+
+                            <div class="cart0">
+                                <img src="/assets/sub img.png" class="Sub0">
+                                <p class="child-cart0">1</p>
+                                <img src="/assets/add img.png"alt="Add-img" class="Add0">
+                            </div>
+
                         </div>
                         <div class="menu-child">
                             <div class="dish-name-rating flex">
@@ -76,7 +115,14 @@
                     <div class="menu-parent">
                         <div class="menu-img">
                             <img src="./assets/veg-pasta.png" class="dish-img">
-                            <img src="./assets/add.png" alt="" id="add">
+                            <img src="./assets/add.png" alt="" id="add1">
+
+                            <div class="cart1">
+                                <img src="/assets/sub img.png" class="Sub1">
+                                <p class="child-cart1">1</p>
+                                <img src="/assets/add img.png"alt="Add-img" class="Add1">
+                            </div>
+
                         </div>
                         <div class="menu-child">
                             <div class="dish-name-rating flex">
@@ -90,21 +136,35 @@
                     <div class="menu-parent">
                         <div class="menu-img">
                             <img src="./assets/menu-noodles1.png" class="dish-img">
-                            <img src="./assets/add.png" alt="" id="add">
+                            <img src="./assets/add.png" alt="" id="add2">
+
+                            <div class="cart2" >
+                                <img src="/assets/sub img.png" class="Sub2">
+                                <p class="child-cart2">1</p>
+                                <img src="/assets/add img.png"alt="Add-img" class="Add2">
+                            </div>
+                            
                         </div>
                         <div class="menu-child">
                             <div class="dish-name-rating flex">
                                 <p>Spicy Noodles</p>
                                 <img src="/assets/star.png" alt="">
-                        </div>
+                            </div>
                             <p class="about-food">Spicy noodles ignite your taste buds with a tantalizing blend of savory spices, delivering a satisfying kick alongside tender noodles that leave you craving more with every bite.</p>
-                             <p id="cost">$3</p>
+                            <p id="cost">$3</p>
                         </div>
                     </div>
                     <div class="menu-parent">
                         <div class="menu-img">
                             <img src="./assets/roll1.png" class="dish-img">
-                            <img src="./assets/add.png" alt="" id="add">
+                            <img src="./assets/add.png" alt="" id="add3">
+
+                            <div class="cart3" >
+                                <img src="/assets/sub img.png" class="Sub3">
+                                <p class="child-cart3">1</p>
+                                <img src="/assets/add img.png"alt="Add-img" class="Add3">
+                            </div>
+
                         </div>
                         <div class="menu-child">
                             <div class="dish-name-rating flex">
@@ -118,7 +178,14 @@
                     <div class="menu-parent">
                         <div class="menu-img">
                             <img src="./assets/chicken roll.png"  class="dish-img">
-                            <img src="./assets/add.png" alt="" id="add">
+                            <img src="./assets/add.png" alt="" id="add4">
+
+                            <div class="cart4" >
+                                <img src="/assets/sub img.png" class="Sub4">
+                                <p class="child-cart4">1</p>
+                                <img src="/assets/add img.png"alt="Add-img" class="Add4">
+                            </div>
+
                         </div>
                         <div class="menu-child">
                             <div class="dish-name-rating flex">
@@ -132,7 +199,14 @@
                     <div class="menu-parent">
                         <div class="menu-img">
                             <img src="./assets/veg salad.png"  class="dish-img">
-                            <img src="./assets/add.png" alt="" id="add">
+                            <img src="./assets/add.png" alt="" id="add5">
+
+                            <div class="cart5" >
+                                <img src="/assets/sub img.png" class="Sub5">
+                                <p class="child-cart5">1</p>
+                                <img src="/assets/add img.png"alt="Add-img" class="Add5">
+                            </div>
+
                         </div>
                         <div class="menu-child">
                             <div class="dish-name-rating flex">
@@ -146,11 +220,18 @@
                     <div class="menu-parent">
                         <div class="menu-img">
                             <img src="./assets/egg &veg salad.png"  class="dish-img">
-                            <img src="./assets/add.png" alt="" id="add">
+                            <img src="./assets/add.png" alt="" id="add6">
+
+                            <div class="cart6" >
+                                <img src="/assets/sub img.png" class="Sub6">
+                                <p class="child-cart6">1</p>
+                                <img src="/assets/add img.png"alt="Add-img" class="Add6">
+                            </div>
+
                         </div>
                         <div class="menu-child">
                             <div class="dish-name-rating flex">
-                                <p> Veggie Delight Sandwich </p>
+                                <p> Egg and Veg Salad Delight </p>
                                 <img src="/assets/star.png" alt="">
                             </div>
                             <p class="about-food">An egg and veg salad blends boiled eggs with a colorful assortment of fresh vegetables like tOMATOes, bell peppers, and cucumbers, complemented by a tangy dressing for a nutritious and satisfying meal option</p>
@@ -160,7 +241,14 @@
                     <div class="menu-parent">
                         <div class="menu-img">
                             <img src="./assets/veg sandwich.png"  class="dish-img">
-                            <img src="./assets/add.png" alt="" id="add">
+                            <img src="./assets/add.png" alt="" id="add7">
+
+                            <div class="cart7" >
+                                <img src="/assets/sub img.png" class="Sub7">
+                                <p class="child-cart7">1</p>
+                                <img src="/assets/add img.png"alt="Add-img" class="Add7">
+                            </div>
+
                         </div>
                         <div class="menu-child">
                             <div class="dish-name-rating flex">
@@ -174,7 +262,14 @@
                     <div class="menu-parent">
                         <div class="menu-img">
                             <img src="./assets/panner sandwich.png"  class="dish-img">
-                            <img src="./assets/add.png" alt="" id="add">
+                            <img src="./assets/add.png" alt="" id="add8">
+
+                            <div class="cart8" >
+                                <img src="/assets/sub img.png" class="Sub8">
+                                <p class="child-cart8">1</p>
+                                <img src="/assets/add img.png"alt="Add-img" class="Add8">
+                            </div>
+
                         </div>
                         <div class="menu-child">
                             <div class="dish-name-rating flex">
@@ -188,7 +283,14 @@
                     <div class="menu-parent">
                         <div class="menu-img">
                             <img src="./assets/menu desert.png"  class="dish-img">
-                            <img src="./assets/add.png" alt="" id="add">
+                            <img src="./assets/add.png" alt="" id="add9">
+
+                            <div class="cart9" >
+                                <img src="/assets/sub img.png" class="Sub9">
+                                <p class="child-cart9">1</p>
+                                <img src="/assets/add img.png"alt="Add-img" class="Add9">
+                            </div>
+
                         </div>
                         <div class="menu-child">
                             <div class="dish-name-rating flex">
@@ -202,7 +304,14 @@
                     <div class="menu-parent">
                         <div class="menu-img">
                             <img src="./assets/veg desert.png"  class="dish-img">
-                            <img src="./assets/add.png" alt="" id="add">
+                            <img src="./assets/add.png" alt="" id="add10">
+
+                            <div class="cart10" >
+                                <img src="/assets/sub img.png" class="Sub10">
+                                <p class="child-cart10">1</p>
+                                <img src="/assets/add img.png"alt="Add-img" class="Add10">
+                            </div>
+
                         </div>
                         <div class="menu-child">
                             <div class="dish-name-rating flex">
@@ -216,7 +325,14 @@
                     <div class="menu-parent">
                         <div class="menu-img">
                             <img src="./assets/red velvet.png"  class="dish-img">
-                            <img src="./assets/add.png" alt="" id="add">
+                            <img src="./assets/add.png" alt="" id="add11">
+
+                            <div class="cart11" >
+                                <img src="/assets/sub img.png" class="Sub11">
+                                <p class="child-cart11">1</p>
+                                <img src="/assets/add img.png"alt="Add-img" class="Add11">
+                            </div>
+
                         </div>
                         <div class="menu-child">
                             <div class="dish-name-rating flex">
@@ -230,7 +346,14 @@
                     <div class="menu-parent">
                         <div class="menu-img">
                             <img src="./assets/menu-cake.png"  class="dish-img">
-                            <img src="./assets/add.png" alt="" id="add">
+                            <img src="./assets/add.png" alt="" id="add12">
+
+                            <div class="cart12" >
+                                <img src="/assets/sub img.png" class="Sub12">
+                                <p class="child-cart12">1</p>
+                                <img src="/assets/add img.png"alt="Add-img" class="Add12">
+                            </div>
+
                         </div>
                         <div class="menu-child">
                             <div class="dish-name-rating flex">
@@ -244,7 +367,14 @@
                 <div class="menu-parent">
                     <div class="menu-img">
                         <img src="./assets/veg gravy.png"  class="dish-img">
-                        <img src="./assets/add.png" alt="" id="add">
+                        <img src="./assets/add.png" alt="" id="add13">
+
+                        <div class="cart13" >
+                            <img src="/assets/sub img.png" class="Sub13">
+                            <p class="child-cart13">1</p>
+                            <img src="/assets/add img.png"alt="Add-img" class="Add13">
+                        </div>
+
                     </div>
                     <div class="menu-child">
                         <div class="dish-name-rating flex">
@@ -258,7 +388,14 @@
                 <div class="menu-parent">
                     <div class="menu-img">
                         <img src="./assets/veg rich.png"  class="dish-img">
-                        <img src="./assets/add.png" alt="" id="add">
+                        <img src="./assets/add.png" alt="" id="add14">
+
+                        <div class="cart14" >
+                            <img src="/assets/sub img.png" class="Sub14">
+                            <p class="child-cart14">1</p>
+                            <img src="/assets/add img.png"alt="Add-img" class="Add14">
+                        </div>
+
                     </div>
                     <div class="menu-child">
                         <div class="dish-name-rating flex">
@@ -272,7 +409,14 @@
                 <div class="menu-parent">
                     <div class="menu-img">
                         <img src="./assets/chinese noodles.png"  class="dish-img">
-                        <img src="./assets/add.png" alt="" id="add">
+                        <img src="./assets/add.png" alt="" id="add15">
+
+                        <div class="cart15" >
+                            <img src="/assets/sub img.png" class="Sub15">
+                            <p class="child-cart15">1</p>
+                            <img src="/assets/add img.png"alt="Add-img" class="Add15">
+                        </div>
+
                     </div>
                     <div class="menu-child">
                         <div class="dish-name-rating flex">
@@ -324,6 +468,6 @@
             <div class="copy-right">
                 <p>Copy right © 2024 NAVANEETHAKRISHNAN.</p>
             </div>
+            <script src="script.js"></script>
         </footer>
 </body>
-</html>
