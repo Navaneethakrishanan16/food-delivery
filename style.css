@@ -11,6 +11,9 @@
     --white:#fff;
     --grey: dimgray;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* utility */
 .pos-ab{
@@ -99,6 +102,7 @@ main{
     align-self: center;
 }
 .sign-btn{
+    cursor: pointer;
     font-family: outfit-regular;
     border: 1px solid var(--tomato);
     padding: 10px 20px;
@@ -155,6 +159,7 @@ main{
     padding: 10px 0px;
 }
 .view-menu{
+    cursor: pointer;
     font-family: outfit-regular;
     border: 1px solid white;
     padding: 15px 30px;
@@ -188,6 +193,7 @@ hr{
     margin: 20px 0px;
 }
 .sample-img img{
+    cursor: pointer;
     border-radius: 50%; 
     /* object-fit: none; */
     margin: 20px auto;
@@ -203,7 +209,9 @@ hr{
 .sample-content img:hover{
     border: 5px solid tomato;
 }
-
+.dish-name{
+    cursor: pointer;
+}
 .food-sample p{
     max-width: 60%;
 }
@@ -433,8 +441,8 @@ input {
 #name{
     display: none;
 }
-/* sizing  1030*/
-@media (max-width:1030px) {
+ /* sizing  1030*/
+ @media (max-width:1030px) {
     .hero-content h2 {
         font-family: outfit-medium;
         line-height: 50px;
@@ -448,13 +456,13 @@ input {
         height:80px;
 
     }
-}
+} 
 
 /* sizing  900*/
 @media (max-width:900px) {
 
    .popup{
-     height: 80vh;
+     height: 60vh;
    }
 
     .top-heading {
@@ -519,15 +527,15 @@ input {
 
 @media (max-width:500px) {
     .popup{
-        height: 60vh;
+        height: 54vh;
     }
 
     .top-heading {
         font-family: outfit-regular;
         justify-content: space-between;
         align-self: center;
-        padding: 20px 0px;
-        height: 95px;
+        padding: 10px 0px;
+        height: 70px;
         margin: auto;
         gap: 40px;
     }
@@ -571,7 +579,7 @@ input {
         display: none;
     }
     .hero-content {
-        bottom: 22px;
+        bottom: 30px;
     }
     .sample-img img{
         width: 80px;
@@ -592,7 +600,33 @@ input {
     .copy-right{
         font-size: 10px;
     }
+    .sample {
+        margin: 10px 0px;
+    }
 }
 
-
-
+@media (max-width:500px) {
+    .hero-content h2 {
+        font-family: outfit-medium;
+        line-height: 18px;
+        color: var(--white);
+        font-size: 19px;
+        max-width: 100%;
+    }
+    .hero-content {
+        bottom: 15px;
+    }
+    .popup {
+        height: 45vh;
+    }
+    .fa-shopping-basket:before,.fa-magnifying-glass:before {
+        display: none;
+    }
+    .fa-btns {
+        gap: 0px;
+    }
+    #download-platform img {
+        margin: 20px 0px 20px 0px;
+        width: 130px;
+    }
+}
